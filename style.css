@@ -1,4 +1,139 @@
 html {
     max-width: 1440px;
     margin: 0 auto;
+    /*font-family: 'Inika', serif;*/
+    font-family: 'Inter', sans-serif;
+}
+button {
+    width: 158px;
+    height: 44px;
+    border-radius: 10px;
+    border-color: #E06733;
+    background: transparent;
+    cursor: pointer;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER BLOCK~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #EDF2EC;
+    height: 134px;
+}
+.nav_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+    height: 50px;
+    margin: 42px 109px 42px 111px;
+}
+.header_logo_section {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+.header_logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 1.05px;
+}
+.header_logo_title {
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.85px;
+}
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.nav_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.nav_links {
+    text-decoration: none;
+    color: #010201;
+    font-family: 'Inika', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.nav_links:hover {
+    color: red;
+    font-weight: 700;
+}
+/*.nav_elements {
+    font-family: 'Inika', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+}
+*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~B O D Y~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 532px;
+    background-color: #EDF2EC;
+}
+.section_1_left {
+    display: flex;
+    width: 50%;
+}
+.section_1_leaves {
+    margin-top: 62px;
+    margin-left: 109px;
+    width: 448.8px;
+    height: 407.36px;
+}
+.section_1_right {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+}
+.section_1_title {
+    margin-top: 98px;
+    margin-right: 87.2px;
+    margin-bottom: 42px;
+    width: 549px;
+    height: 101px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+}
+.plants_green {
+    color: #499A18
+}
+.section_1_text {
+    width: 525.44px;
+    height: 105px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    margin-bottom: 48px;
+}
+.section_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: transparent;
+}
+.title_2 {
+    font-family: 'Inika';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: left;
+
 }

@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="./assets/img/logo_vector.png" type="image/png">
     <link rel="stylesheet" href="./style.css" type="text/css">
@@ -17,60 +16,61 @@
     <div class="nav_section">
         <div class="header_logo_section">
             <img src="./assets/img/logo_vector.png" alt="Plants site logo" class="header_logo">
-            <div class="header_logo_title">Plants</div>
+            <div class="header_logo_title"><a href="https://aniskamaksim.github.io/Plants">Plants</a></div>
         </div>
         <nav class="header_menu">
             <ul class="nav_menu">
-                <li class="nav_elements active"><a href="/" class="nav_links">Home</a></li>
-                <li class="nav_elements"><a href="/" class="nav_links">About us</a></li>
-                <li class="nav_elements"><a href="/" class="nav_links">Service</a></li>
-                <li class="nav_elements"><a href="/" class="nav_links">Price</a></li>
-                <li class="nav_elements"><a href="/" class="nav_links">Contacts</a></li>
+                <li class="nav_elements"><a href="#home" class="nav_links active">Home</a></li>
+                <li class="nav_elements"><a href="#about" class="nav_links">About us</a></li>
+                <li class="nav_elements"><a href="#service" class="nav_links">Service</a></li>
+                <li class="nav_elements"><a href="#prices" class="nav_links">Price</a></li>
+                <li class="nav_elements"><a href="#contacts" class="nav_links">Contacts</a></li>
             </ul>
         </nav>
     </div>
 </header>
-
-
-<body class="body">
-<div class="section">
-    <div class="welcome__left">
-        <img src="./assets/img/leafs.png" alt="leaves" class="welcome__leaves">
-    </div>
-    <div class="welcome__right">
-        <div class="welcome__title section__title">We grow <span class="span__green">plants</span> and give you oxygen
+<main>
+    <div id="home" class="section">
+        <div class="welcome__left">
+            <img src="./assets/img/leafs.png" alt="leaves" class="welcome__leaves">
         </div>
-        <div class="welcome__text section__text">Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </div>
-        <button class="welcome__button">Learn more</button>
-    </div>
-</div>
-<div class="section about">
-    <div class="about__left">
-        <div class="about__title"><span class="span__green">We are <span
-                class="span__orange">professional experienced</span> gardeners</span></div>
-        <div class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
+        <div class="welcome__right">
+            <h1 class="welcome__title section__title">We grow <span class="span__green">plants</span> and give you
+                oxygen
+            </h1>
+            <div class="welcome__text section__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </div>
+            <button class="welcome__button">Learn more</button>
         </div>
     </div>
-    <div class="about__right">
-        <img class="about__img" src="./assets/img/houseplant%201.png" alt="houseplant">
-    </div>
-</div>
-<div class="section service">
-    <div class="service__menu">
-        <div class="service__title">Service and our projects</div>
-        <div class="service__buttons">
-            <button class="service__button">Gardens</button>
-            <button class="service__button">Lawn</button>
-            <button class="service__button">Planting</button>
+    <div id="about" class="section about">
+        <div class="about__left">
+            <h2 class="about__title"><span class="span__green">We are <span
+                    class="span__orange">professional experienced</span> gardeners</span></h2>
+            <div class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of
+                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the
+                leap into electronic typesetting, remaining essentially unchanged.
+            </div>
+        </div>
+        <div class="about__right">
+            <img class="about__img" src="./assets/img/houseplant%201.png" alt="houseplant">
         </div>
     </div>
-    <div class="service__image-block">
-        <div class="service__image-block_first-row">
+    <div id="service" class="section service">
+        <div class="service__menu">
+            <h2 class="service__title">Service and our projects</h2>
+            <div class="service__buttons">
+                <button class="service__button">Gardens</button>
+                <button class="service__button">Lawn</button>
+                <button class="service__button">Planting</button>
+            </div>
+        </div>
+        <div class="service__image-block">
             <div class="service__image-card">
                 <img src="./assets/img/service-element_1.png" alt="garden care">
                 <div class="img__title_decr">
@@ -92,8 +92,6 @@
                     <div class="image-card__description">Lorem Ipsum has been the industry</div>
                 </div>
             </div>
-        </div>
-        <div class="service__image-block_second-row">
             <div class="service__image-card">
                 <img src="./assets/img/service-element_4.png" alt="garden care">
                 <div class="img__title_decr">
@@ -117,46 +115,85 @@
             </div>
         </div>
     </div>
-    <div class="prices">
+    <div id="prices" class="section prices">
         <div class="prices__wrapper">
             <div class="prices__left">
-                <div class="prices__left_title">Prices</div>
+                <h2 class="prices__left_title">Prices</h2>
                 <div class="prices__left_accordion-block">
                     <div class="accordion-block_element">
                         <div class="accordion-block_element_title">Basics</div>
-                        <div class="accordion-block_element_img"><img src="./assets/icons/accordion_btn.png" alt="arrow down button"></div>
-                    </div><div class="accordion-block_element">
+                        <div class="accordion-block_element_img"><img src="./assets/icons/accordion_btn.png"
+                                                                      alt="arrow down button"></div>
+                    </div>
+                    <!--                    <div class="accordion-block_element opened">-->
+                    <!--                        <div class="opened__wrapper">-->
+                    <!--                            <div class="opened__title-img">-->
+                    <!--                                <div class="opened__title">Basics</div>-->
+                    <!--                                <div class="opened__img"><img class = "img__opened_closed"src="./assets/icons/accordion_btn.png"></div>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="opened__description"></div>-->
+                    <!--                            <div class="opened__price"></div>-->
+                    <!--                            <div class="opened__order-button"></div>-->
+                    <!--                        </div>-->
+                    <!--                </div>-->
+                    <div class="accordion-block_element">
                         <div class="accordion-block_element_title">Standart</div>
-                    <div class="accordion-block_element_img"><img src="./assets/icons/accordion_btn.png" alt="arrow down button"></div>
-                    </div><div class="accordion-block_element">
+                        <div class="accordion-block_element_img"><img src="./assets/icons/accordion_btn.png"
+                                                                      alt="arrow down button"></div>
+                    </div>
+                    <div class="accordion-block_element">
                         <div class="accordion-block_element_title">Pro care</div>
-                    <div class="accordion-block_element_img"><img src="./assets/icons/accordion_btn.png" alt="arrow down button"></div>
+                        <div class="accordion-block_element_img"><img src="./assets/icons/accordion_btn.png"
+                                                                      alt="arrow down button"></div>
                     </div>
                 </div>
             </div>
             <div class="prices__right">
-                <div class="prices__right_title">Our best <span class="span__green">gardeners</span> are ready to help you</div>
+                <h2 class="prices__right_title">Our best <span class="span__green">gardeners</span> are ready to help
+                    you
+                </h2>
                 <button class="service__button contact-us__button">Contact us</button>
                 <img src="./assets/img/leafs.png" alt="leaves" class="welcome__leaves contact-us__leaves">
             </div>
         </div>
     </div>
-    <div class="section contacts">
+    <div id="contacts" class="section contacts">
         <div class="contacts__img">
             <img src="./assets/img/contact_woman%201.png" alt="happy__gardener" class="happy__gardener">
         </div>
-        <div class="contacts__title">Contact us</div>
+        <h2 class="contacts__title">Contact us</h2>
         <div class="contacts__select">
-            <select class="select">
-                <option>City</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+            <label for="city-select"></label>
+            <select id="city-select" class="select">
+                <option value="">City</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
             </select>
         </div>
     </div>
     <!-- THE END OF FUCKING LAYOUT -->
     <script src="index.js"></script>
-</body>
-<footer class="footer"></footer>
+</main>
+<footer class="section footer">
+    <div class="footer__wrapper">
+        <div class="footer__credits">&#169; &nbsp; 2023 <a class="footer__link"
+                                                           href="https://github.com/aniskamaksim">&nbsp;github&nbsp;</a>
+        </div>
+        <div class="footer__rsschool"><a class="footer__link" href="https://rs.school/js-stage0/">&nbsp;Rolling Scopes
+            School</a></div>
+        <div class="footer__social-icons">
+            <ul>
+                <li class="footer__social-icons_li"><a href="https://instagram.com"> <img
+                        src="./assets/icons/icon-instagram.png" alt="instagram icon"></a></li>
+                <li class="footer__social-icons_li"><a href="https://facebook.com"><img
+                        src="./assets/icons/icon-facebook.png" alt="facebook icon"></a></li>
+                <li class="footer__social-icons_li"><a href="https://twitter.com/beegoody"><img
+                        src="./assets/icons/icon-twitter.png" alt="twitter icon"></a></li>
+                <li class="footer__social-icons_li_last"><a href="https://printerest.com"><img
+                        src="./assets/icons/icon-pinterest.png" alt="printerest icon"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </html>

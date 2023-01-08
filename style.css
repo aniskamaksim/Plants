@@ -1,8 +1,29 @@
 html {
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     /*font-family: 'Inika', serif;*/
     font-family: 'Inter', sans-serif;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+}
+
+h2 {
+    font-family: Inika, serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 button {
@@ -12,6 +33,17 @@ button {
     border-color: #E06733;
     background: transparent;
     cursor: pointer;
+}
+
+a {
+    color: #010201;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+    display: inline-flex;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER BLOCK~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -43,14 +75,14 @@ button {
 .header_logo {
     width: 20px;
     height: 20px;
-    margin-right: 1.05px;
+    margin-right: 1px;
 }
 
 .header_logo_title {
     font-family: 'Inika', serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20.85px;
+    line-height: 21px;
 }
 
 .header_menu {
@@ -77,18 +109,12 @@ button {
     line-height: 50px;
 }
 
+.active,
 .nav_links:hover {
     color: red;
     font-weight: 700;
 }
 
-/*.nav_elements {
-    font-family: 'Inika', serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 50px;
-}
-*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~B O D Y~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .section {
     display: flex;
@@ -106,8 +132,8 @@ button {
 .welcome__leaves {
     margin-top: 62px;
     margin-left: 109px;
-    width: 448.8px;
-    height: 407.36px;
+    width: 449px;
+    height: 407px;
 }
 
 .welcome__right {
@@ -118,7 +144,7 @@ button {
 
 .welcome__title {
     margin-top: 98px;
-    margin-right: 87.2px;
+    margin-right: 87px;
     margin-bottom: 42px;
 }
 
@@ -130,15 +156,15 @@ button {
     color: #499A18;
 }
 
-.section__title {
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 50px;
-    text-align: left;
-}
+/*.section__title {*/
+/*    font-size: 45px;*/
+/*    font-weight: 700;*/
+/*    line-height: 50px;*/
+/*    text-align: left;*/
+/*}*/
 
 .welcome__text {
-    width: 525.44px;
+    width: 525px;
     margin-bottom: 48px;
 }
 
@@ -179,12 +205,12 @@ button {
 }
 
 .about__title {
-    font-family: Inika, serif;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 52px;
-    letter-spacing: 0;
-    text-align: left;
+    /*font-family: Inika, serif;*/
+    /*font-size: 40px;*/
+    /*font-weight: 400;*/
+    /*line-height: 52px;*/
+    /*letter-spacing: 0;*/
+    /*text-align: left;*/
     margin-bottom: 40px;
 }
 
@@ -202,15 +228,13 @@ button {
 
 .service__menu {
     display: flex;
-    width: 100%;
     flex-direction: row;
     margin: 40px 0 90px 109px;
 }
 
 .service__title {
     display: flex;
-    width: 30%;
-    margin-left: 30px;
+    width: 33%;
     color: #499A18;
     font-family: Inika, serif;
     font-size: 40px;
@@ -221,7 +245,7 @@ button {
 
 .service__buttons {
     display: flex;
-    width: 70%;
+    width: 67%;
     flex-direction: row;
     gap: 38px;
     align-items: center;
@@ -238,24 +262,18 @@ button {
     border: solid 1px #E06733;
 }
 
+.service__button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 .service__image-block {
     display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding-left: 109px;
-    padding-bottom: 66px;
-}
-
-.service__image-block_first-row,
-.service__image-block_second-row {
-    display: flex;
     flex-direction: row;
-    width: 100%;
-    gap: 116px;
-    margin-bottom: 55px;
-}
-
-.service__image-card {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 98px;
+    margin: 0 109px 121px 109px;
 }
 
 .img__title_decr {
@@ -264,6 +282,11 @@ button {
     border: 1px solid #E3E1D5;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.service__image-card:hover {
+    transform: scale(1.05);
+    transition: 1s;
 }
 
 .image-card__title {
@@ -358,11 +381,38 @@ button {
     margin: 17px 40px 17px 0;
 }
 
+.opened {
+    width: 250px;
+    height: 154px;
+    display: flex;
+}
+
+.opened__wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px 41px 12px 40px;
+    border: 1px solid purple;
+}
+
+.opened__title-img {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: underline;
+}
+
 .prices__right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 50%;
+}
+
+.img__opened_closed {
+    transform: rotate(180deg);
 }
 
 .prices__right_title {
@@ -373,7 +423,9 @@ button {
     letter-spacing: 0;
     text-align: right;
     margin-bottom: 38px;
+    margin-left: 30px;
 }
+
 .contact-us__button {
     text-transform: none;
 }
@@ -382,13 +434,16 @@ button {
     width: 152px;
     height: 175px;
 }
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~Contacts section~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .contacts__img {
     margin: 51px 0 0 109px;
 }
+
 .contacts__title {
     margin-top: 60px;
-    margin-left: 113px;
+    margin-left: 55px;
+    margin-right: 25px;
     font-family: Inika, serif;
     font-size: 40px;
     font-weight: 700;
@@ -397,11 +452,53 @@ button {
     text-align: left;
     color: #499A18;
 }
+
 .select {
     width: 450px;
     height: 50px;
     background-color: #D6E7D2;
-    margin-left: 64px;
+    margin-left: 70px;
     margin-top: 148px;
+    scroll-behavior: smooth;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer {
+    background-color: #FFFFFF;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 40px 109px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__credits,
+.footer__rsschool {
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.footer__social-icons_li {
+    margin-right: 20px;
+}

@@ -1,0 +1,504 @@
+html {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    /*font-family: 'Inika', serif;*/
+    font-family: 'Inter', sans-serif;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+}
+
+h2 {
+    font-family: Inika, serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+button {
+    width: 158px;
+    height: 44px;
+    border-radius: 10px;
+    border-color: #E06733;
+    background: transparent;
+    cursor: pointer;
+}
+
+a {
+    color: #010201;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER BLOCK~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #EDF2EC;
+    height: 134px;
+}
+
+.nav_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+    height: 50px;
+    margin: 42px 109px 42px 111px;
+}
+
+.header_logo_section {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+
+.header_logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 1px;
+}
+
+.header_logo_title {
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.nav_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav_links {
+    text-decoration: none;
+    color: #010201;
+    font-family: 'Inika', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.active,
+.nav_links:hover {
+    color: red;
+    font-weight: 700;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~B O D Y~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: #EDF2EC;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~Welcome section~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.welcome__left {
+    display: flex;
+    width: 50%;
+}
+
+.welcome__leaves {
+    margin-top: 62px;
+    margin-left: 109px;
+    width: 449px;
+    height: 407px;
+}
+
+.welcome__right {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+}
+
+.welcome__title {
+    margin-top: 98px;
+    margin-right: 87px;
+    margin-bottom: 42px;
+}
+
+.span__orange {
+    color: #E06733;
+}
+
+.span__green {
+    color: #499A18;
+}
+
+/*.section__title {*/
+/*    font-size: 45px;*/
+/*    font-weight: 700;*/
+/*    line-height: 50px;*/
+/*    text-align: left;*/
+/*}*/
+
+.welcome__text {
+    width: 525px;
+    margin-bottom: 48px;
+}
+
+.welcome__button {
+    text-transform: uppercase;
+    margin-bottom: 94px;
+}
+
+.section__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~About section~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.about {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: transparent;
+}
+
+.about__left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin-top: 161px;
+    margin-left: 109px;
+}
+
+.about__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 93px 109px 94px 0;
+}
+
+.about__title {
+    /*font-family: Inika, serif;*/
+    /*font-size: 40px;*/
+    /*font-weight: 400;*/
+    /*line-height: 52px;*/
+    /*letter-spacing: 0;*/
+    /*text-align: left;*/
+    margin-bottom: 40px;
+}
+
+.about__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~Service section~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.service {
+    flex-direction: column;
+}
+
+.service__menu {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0 90px 109px;
+}
+
+.service__title {
+    display: flex;
+    width: 33%;
+    color: #499A18;
+    font-family: Inika, serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: left;
+}
+
+.service__buttons {
+    display: flex;
+    width: 67%;
+    flex-direction: row;
+    gap: 38px;
+    align-items: center;
+}
+
+.service__button {
+    color: #E06733;
+    text-transform: capitalize;
+    font-family: Inika, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    border-radius: 5px;
+    border: solid 1px #E06733;
+}
+
+.service__button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.service__image-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 98px;
+    margin: 0 109px 121px 109px;
+}
+
+.img__title_decr {
+    text-align: center;
+    margin-top: -5px;
+    border: 1px solid #E3E1D5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.service__image-card:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.image-card__title {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: #E06733;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+.image-card__description {
+    margin-bottom: 36px;
+    color: #717171;
+    font-family: Inter, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~Prices section~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.prices {
+    display: flex;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.prices__wrapper {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 40px 109px 115px 109px;
+}
+
+.prices__left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.prices__left_title {
+    font-family: Inter, serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.prices__left_accordion-block {
+    display: flex;
+    flex-direction: column;
+    width: 332px;
+    height: 282px;
+    gap: 32px;
+    border: solid #E3E1D5 1px;
+    border-radius: 20px;
+}
+
+.accordion-block_element {
+    margin-left: 41px;
+    margin-right: 41px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+    height: 50px;
+    background-color: #EDF2EC;
+    border-radius: 20px;
+}
+
+.accordion-block_element:first-of-type {
+    margin-top: 34px;
+}
+
+.accordion-block_element_title {
+    margin: 16px 0 16px 40px;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.accordion-block_element_img {
+    margin: 17px 40px 17px 0;
+}
+
+.opened {
+    width: 250px;
+    height: 154px;
+    display: flex;
+}
+
+.opened__wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px 41px 12px 40px;
+    border: 1px solid purple;
+}
+
+.opened__title-img {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: underline;
+}
+
+.prices__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.img__opened_closed {
+    transform: rotate(180deg);
+}
+
+.prices__right_title {
+    font-family: Inter, serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0;
+    text-align: right;
+    margin-bottom: 38px;
+    margin-left: 30px;
+}
+
+.contact-us__button {
+    text-transform: none;
+}
+
+.contact-us__leaves {
+    width: 152px;
+    height: 175px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~Contacts section~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.contacts__img {
+    margin: 51px 0 0 109px;
+}
+
+.contacts__title {
+    margin-top: 60px;
+    margin-left: 55px;
+    margin-right: 25px;
+    font-family: Inika, serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #499A18;
+}
+
+.select {
+    width: 450px;
+    height: 50px;
+    background-color: #D6E7D2;
+    margin-left: 70px;
+    margin-top: 148px;
+    scroll-behavior: smooth;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer {
+    background-color: #FFFFFF;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 40px 109px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__credits,
+.footer__rsschool {
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.footer__social-icons_li {
+    margin-right: 20px;
+}
